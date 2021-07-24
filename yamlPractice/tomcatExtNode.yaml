@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: tomcatabc
+spec:
+  externalIPs: 
+  - 172.31.1.131
+  ports:
+  - port: 8091
+    targetPort: 8080
+  selector:
+     app: tomcat1
